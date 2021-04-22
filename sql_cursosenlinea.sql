@@ -1,10 +1,10 @@
+CREATE DATABASE  IF NOT EXISTS `cursosenlinea` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `cursosenlinea`;
 -- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: beisbolplus
+-- Host: 127.0.0.1    Database: cursosenlinea
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.4.14-MariaDB
-CREATE DATABASE IF NOT EXISTS beisbolpus;
-USE beisbolplus;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -211,6 +211,84 @@ LOCK TABLES `marcas` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `membresias`
+--
+
+DROP TABLE IF EXISTS `membresias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `membresias` (
+  `id_mebresias` int(11) NOT NULL AUTO_INCREMENT COMMENT 'primary key',
+  `id_usuario` int(11) DEFAULT NULL,
+  `id_tipo_cobro` int(11) DEFAULT NULL,
+  `activo` tinyint(4) DEFAULT NULL,
+  `fecha_creacion` datetime DEFAULT current_timestamp(),
+  `fecha_modificacion` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_mebresias`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Tabla para relacionar los pagos con los usuarios y saber si se generara cobro mensual, anual o solo unica vez';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `membresias`
+--
+
+LOCK TABLES `membresias` WRITE;
+/*!40000 ALTER TABLE `membresias` DISABLE KEYS */;
+/*!40000 ALTER TABLE `membresias` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `migrations`
+--
+
+DROP TABLE IF EXISTS `migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `migrations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `migrations`
+--
+
+LOCK TABLES `migrations` WRITE;
+/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
+INSERT INTO `migrations` VALUES (30,'2019_05_03_000001_create_customer_columns',1),(31,'2019_05_03_000002_create_subscriptions_table',1),(32,'2019_05_03_000003_create_subscription_items_table',1),(33,'2021_04_15_231614_create_roles_table',1);
+/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `password_resets`
+--
+
+DROP TABLE IF EXISTS `password_resets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `password_resets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(45) DEFAULT NULL,
+  `token` varchar(255) DEFAULT NULL,
+  `created_at` varchar(45) DEFAULT 'current_timestamp()',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `password_resets`
+--
+
+LOCK TABLES `password_resets` WRITE;
+/*!40000 ALTER TABLE `password_resets` DISABLE KEYS */;
+INSERT INTO `password_resets` VALUES (1,'danielsolis023@gmail.com','$2y$10$pOZeGenwh08dS7iwY52BOebhKGkgdllEOrVIcE0xZODMUBbfoYtx6','2021-04-22 21:29:01');
+/*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `productos`
 --
 
@@ -277,6 +355,159 @@ INSERT INTO `productos_atributos` VALUES (1,3,1,'2021-03-02 16:49:36'),(2,3,2,'2
 UNLOCK TABLES;
 
 --
+-- Table structure for table `role_user`
+--
+
+DROP TABLE IF EXISTS `role_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `role_user` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `role_id` bigint(20) unsigned NOT NULL,
+  `user_id` bigint(20) unsigned NOT NULL,
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `role_user_role_id_foreign` (`role_id`),
+  CONSTRAINT `role_user_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role_user`
+--
+
+LOCK TABLES `role_user` WRITE;
+/*!40000 ALTER TABLE `role_user` DISABLE KEYS */;
+INSERT INTO `role_user` VALUES (1,1,1,'2021-04-22 21:04:07',NULL),(2,3,2,'2021-04-23 02:38:13','2021-04-23 02:38:13');
+/*!40000 ALTER TABLE `role_user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `roles`
+--
+
+DROP TABLE IF EXISTS `roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `roles` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `roles`
+--
+
+LOCK TABLES `roles` WRITE;
+/*!40000 ALTER TABLE `roles` DISABLE KEYS */;
+INSERT INTO `roles` VALUES (1,'admin','Administrator','2021-04-23 01:59:16','2021-04-23 01:59:16'),(2,'unica','unica','2021-04-23 01:59:16','2021-04-23 01:59:16'),(3,'premium','premium','2021-04-23 01:59:16','2021-04-23 01:59:16');
+/*!40000 ALTER TABLE `roles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `subscription_items`
+--
+
+DROP TABLE IF EXISTS `subscription_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `subscription_items` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `subscription_id` bigint(20) unsigned NOT NULL,
+  `stripe_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `stripe_plan` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `subscription_items_subscription_id_stripe_plan_unique` (`subscription_id`,`stripe_plan`),
+  KEY `subscription_items_stripe_id_index` (`stripe_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `subscription_items`
+--
+
+LOCK TABLES `subscription_items` WRITE;
+/*!40000 ALTER TABLE `subscription_items` DISABLE KEYS */;
+/*!40000 ALTER TABLE `subscription_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `subscriptions`
+--
+
+DROP TABLE IF EXISTS `subscriptions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `subscriptions` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `stripe_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `stripe_status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `stripe_plan` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  `trial_ends_at` timestamp NULL DEFAULT NULL,
+  `ends_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `subscriptions_user_id_stripe_status_index` (`user_id`,`stripe_status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `subscriptions`
+--
+
+LOCK TABLES `subscriptions` WRITE;
+/*!40000 ALTER TABLE `subscriptions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `subscriptions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `password` varchar(75) DEFAULT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `token` varchar(256) DEFAULT NULL,
+  `stripe_id` varchar(255) DEFAULT NULL,
+  `card_brand` varchar(255) DEFAULT NULL,
+  `card_last_four` varchar(4) DEFAULT NULL,
+  `trial_ends_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `users_stripe_id_index` (`stripe_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'$2y$10$VhYPuDp./EAiZm3snU/uQOMfyQ.9pm5deyCtWUzyQdtdBos3KjIcS','daniel','danielsolis023@gmail.com',NULL,NULL,NULL,NULL,NULL,'2021-04-16 04:56:27','2021-04-16 04:56:27'),(2,'$2y$10$L0IY2bHxi/lowbaxFyOQGemVhmZD3OALSJx3SI43YikAmNyC1xsQu','Eduardo','danielsolis023@hotmail.com',NULL,NULL,NULL,NULL,NULL,'2021-04-23 02:38:13','2021-04-23 02:38:13');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `ventas`
 --
 
@@ -300,6 +531,10 @@ LOCK TABLES `ventas` WRITE;
 INSERT INTO `ventas` VALUES (1,'2021-03-10',1),(2,'2021-03-10',1),(3,'2021-03-10',1),(4,'2021-03-10',4),(6,'2021-03-10',1),(8,'2021-03-10',1),(10,'2021-03-10',2),(12,'2021-03-10',2),(13,'2021-03-10',1),(14,'2021-03-10',1),(15,'2021-03-10',1),(17,'2021-03-10',1),(19,'2021-03-10',1);
 /*!40000 ALTER TABLE `ventas` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'cursosenlinea'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -310,4 +545,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-03-10 13:56:11
+-- Dump completed on 2021-04-22 16:55:38

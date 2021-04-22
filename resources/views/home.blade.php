@@ -6,11 +6,6 @@
         <div class="container">
             <div class="row justify-content-center mrl-q">
                 <div class="col-md-2 col-lg-2 d-none d-sm-none d-md-block d-lg-block p-0 text-right content-category">
-                    <ul class="category-hero" class="menu">
-                        @foreach ($datos['categorias'] as $categoria)
-                        <li><a href="{{ url('/categoria') }}/{{ $categoria->id_categoria}}">{{ $categoria->nombre_categoria }}</a></li>
-                        @endforeach
-                    </ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10 p-0">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -61,18 +56,7 @@
                 </div>
             @endif
             <div class="row justify-content-center">
-                @foreach ($datos['productos'] as $producto)
-                <div class="col-10 col-sm-9 col-md-4 col-lg-4 producto">
-                    <img src="{{ asset('public/img/productos')}}/{{ $producto->url_imagen }}" alt="" class="2-100" width="100%">
-                    <form action="{{ route('cart.add') }}" method="post">
-                        @csrf
-                        <button type="submit" class="btn btn-primary btn-add-sp">Añadir al carrito</button>
-                        <input type="hidden" name="id_producto" value="{{ $producto->id_producto }}">
-                    </form>
-                    <h5><a href="{{ url('productos/detalle') }}/{{ $producto->id_producto }}">{{ $producto->nombre_producto }}</a></h5>
-                    <span>$ {{ $producto->precio }}</span>
-                </div>
-                @endforeach
+                
             </div>
         </div>
     </section>

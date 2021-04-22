@@ -49,6 +49,13 @@
                                 <a href="{{ route('cart.checkout') }}" class="icon-shopping"><img src="{{ asset('public/icons/carrito.svg') }}" alt="Carrito"></a>
                             @endif
                         </li>
+                        <li>
+                            @if (Auth::guest())
+                                <a href="{{ url('/login') }}"> Login </a>
+                            @else
+                            <a href="{{ url('/logout') }}"> logout </a>
+                            @endif
+                        </li>
                         <li class="menu-m">
                             <button type="button" class="toggle-menu btn-primary">
                                 <span class="icon-bar"></span>

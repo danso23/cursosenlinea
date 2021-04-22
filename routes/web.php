@@ -20,7 +20,6 @@ Route::get('/', 'ProductoController@home')->name('home');
 /****PRODUCTOS****/
 Route::get('productos', 'ProductoController@index')->name('productos');
 Route::get('productos/detalle/{id}', 'ProductoController@productoDescripcion')->name('producto.detalle');
-Route::get('home', 'ProductoController@home')->name('home');
 ##ProductoXcategoria
 Route::get('categoria/{id}', 'ProductoController@productoXCategoria')->name('categoria');
 ##Buscador
@@ -51,3 +50,10 @@ Route::get('/paypal/pay', 'PaypalController@payWithPayPal');
 Route::get('/paypal/status', 'PaypalController@payPalStatus');
 
 Route::post('/whatsend', 'Whatsapp\WhatsappController@sendMessage')->name('whatsend');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+

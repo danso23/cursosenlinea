@@ -20,7 +20,7 @@ class ProductoController extends Controller{
         $categorias = Categoria::where('activo', '1')->selectRaw('id_categoria, nombre_categoria')->get();
         $utils = new Utils();
         foreach($productos as $producto){
-            $monedaConvertida = $utils->convertCurrency($producto->precio);//$this->convertCurrency($producto->precio);
+            $monedaConvertida = $utils->convertCurrency($producto->precio);
             $producto->precio = $monedaConvertida;
         }
         $datos = array('productos' => $productos, 'categorias' => $categorias );
@@ -32,7 +32,7 @@ class ProductoController extends Controller{
         $categorias = Categoria::where('activo', '1')->selectRaw('id_categoria, nombre_categoria')->get();
         $utils = new Utils();
         foreach($productos as $producto){
-            $monedaConvertida = $utils->convertCurrency($producto->precio);//$this->convertCurrency($producto->precio);
+            $monedaConvertida = $utils->convertCurrency($producto->precio);
             $producto->precio = $monedaConvertida;
         }
         $datos = array('productos' => $productos, 'categorias' => $categorias);

@@ -10,20 +10,20 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link href="{{ asset('public/css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" />
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="{{ asset('public/img/favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('/img/favicon.ico') }}" />
     <!-- Font Awesome icons (free version)-->
-    <script src="{{ asset('public/js/all.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ asset('/js/all.js') }}" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="{{ asset('public/css/font-family.css') }}" rel="stylesheet" /><!-- Merriweather-->
-    <link href="{{ asset('public/css/font-family2.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('/css/font-family.css') }}" rel="stylesheet" /><!-- Merriweather-->
+    <link href="{{ asset('/css/font-family2.css') }}" rel="stylesheet" type="text/css" />
     <!-- Third party plugin CSS-->
-    <link href="{{ asset('public/css/magnific-popup.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/magnific-popup.min.css') }}" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{ asset('public/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet" />
     <!-- AOS ANIMATION -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/animation_aos/aos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/animation_aos/aos.css') }}">
 </head>
 <body>
     <div id="app">
@@ -35,18 +35,18 @@
             <div class="row mrl-q">
                 <header id="site-header">
                     <a href="{{ asset('/')}}" class="logo">
-                        <img src="{{ asset('public/img/logo.png') }}" class="logo-black" alt="">
+                        <img src="{{ asset('/img/logo.png') }}" class="logo-black" alt="">
                         <!-- <img src="img/logo.png" class="logo-white" alt=""> -->
                     </a>
                     <ul class="menu-right m-0">
                         <li>
-                            <a href="#" class="icon-search" data-toggle="modal" data-target="#exampleModal"><img src="{{ asset('public/icons/busqueda.svg') }}" alt="Busqueda"></a>
+                            <a href="#" class="icon-search" data-toggle="modal" data-target="#exampleModal"><img src="{{ asset('/icons/busqueda.svg') }}" alt="Busqueda"></a>
                         </li>
                         <li>
                             @if (count(Cart::getContent()))
-                                <a href="{{ route('cart.checkout') }}" class="icon-shopping"><img src="{{ asset('public/icons/carrito.svg') }}" alt="Carrito"><span class="badge badge-danger">{{count(Cart::getContent())}}</span></a>
+                                <a href="{{ route('cart.checkout') }}" class="icon-shopping"><img src="{{ asset('/icons/carrito.svg') }}" alt="Carrito"><span class="badge badge-danger">{{count(Cart::getContent())}}</span></a>
                             @else
-                                <a href="{{ route('cart.checkout') }}" class="icon-shopping"><img src="{{ asset('public/icons/carrito.svg') }}" alt="Carrito"></a>
+                                <a href="{{ route('cart.checkout') }}" class="icon-shopping"><img src="{{ asset('/icons/carrito.svg') }}" alt="Carrito"></a>
                             @endif
                         </li>
                         <li>
@@ -99,10 +99,10 @@
                         <h3>Siguenos</h3>
                         <ul>
                             <li>
-                                <a href="#"><img src="{{ asset('public/icons/iconofacebook.svg') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('/icons/iconofacebook.svg') }}" alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{ asset('public/icons/iconoinstagram.svg') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('/icons/iconoinstagram.svg') }}" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -110,18 +110,18 @@
                     <h3>Formas de Pago</h3>
                         <ul>
                             <li>
-                                <a href="#"><img src="{{ asset('public/icons/iconopaypal.svg') }}" alt="PayPal"></a>
+                                <a href="#"><img src="{{ asset('/icons/iconopaypal.svg') }}" alt="PayPal"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{ asset('public/icons/iconomastercard.svg') }}" alt="MasterCard"></a>
+                                <a href="#"><img src="{{ asset('/icons/iconomastercard.svg') }}" alt="MasterCard"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{{ asset('public/icons/iconovisa.svg') }}" alt="Visa"></a>
+                                <a href="#"><img src="{{ asset('/icons/iconovisa.svg') }}" alt="Visa"></a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-7 text-center text.sm-center text-md-right text-lg-right content-footer-logo">
-                        <a href=""><img src="{{ asset('public/img/logo.png') }}" alt="index.php"></a>
+                        <a href=""><img src="{{ asset('/img/logo.png') }}" alt="index.php"></a>
                         <div class="row justify-content-end">
                             <div class="col-md-11 col-lg-6">
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur vero, voluptatum, quia, illum animi quam exercitationem voluptates veniam.</p>
@@ -140,19 +140,19 @@
         </footer>
         <!--end footer-->
         <!-- Bootstrap core JS-->
-        <script src="{{ asset('public/js/jquery-3.5.1.js') }}"></script>
-        <script src="{{ asset('public/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('/js/jquery-3.5.1.js') }}"></script>
+        <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
         <!-- Third party plugin JS-->
-        <script src="{{ asset('public/js/jquery.easing.min.js') }}"></script>
-        <script src="{{ asset('public/js/jquery.magnific-popup.min.js')}}"></script>
-        <script type='text/javascript' src="{{ asset('public/js/main.js') }}"></script>
-        <script src="{{ asset('public/js/wow.min.js') }}"></script>
+        <script src="{{ asset('/js/jquery.easing.min.js') }}"></script>
+        <script src="{{ asset('/js/jquery.magnific-popup.min.js')}}"></script>
+        <script type='text/javascript' src="{{ asset('/js/main.js') }}"></script>
+        <script src="{{ asset('/js/wow.min.js') }}"></script>
         <!-- Core theme JS-->
-        <!-- <script src="{{ asset('public/js/scripts.js') }}"></script> -->
+        <!-- <script src="{{ asset('/js/scripts.js') }}"></script> -->
         <!-- AOS ANIMATION -->
-        <script type="text/javascript" src="{{ asset('public/animation_aos/aos.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/animation_aos/aos.js') }}"></script>
         <!-- INIT AOS -->
-        <script type="text/javascript" src="{{ asset('public/js/animation.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/animation.js') }}"></script>
     </div>
     </section> 
 </body>

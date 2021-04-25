@@ -1,3 +1,12 @@
+/*colors*/
+:root {
+  --white-df: #FFFFFF;
+  --green-df: #70B62C;
+  --purple-df: #48448F;
+  --gray-light-df: #F1F1F1;
+  --gray-dark-df: #383838;
+}
+
 /*font*/
 @font-face {
     font-family: "Bebas-Regular";
@@ -17,7 +26,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #f0f0f0;
+  background-color: var(--white-df);
 }
 /* end footer */
 @keyframes showNavigation{
@@ -34,20 +43,53 @@ body.menu-opened {
 }
 
 .info-nav{
-  background-color: #f0f0f0;
+  background-color: transparent;
+  background-image: url('../img/Imagenes/DF-banner.jpg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.info-nav ul.menu-right{
+.info-nav ul.menu-right, .info-nav ul.menu-center{
   list-style: none;
   float: right;
 }
 
-.info-nav ul.menu-right li{
+.info-nav ul.menu-right li, .info-nav ul.menu-center li{
   display: inline-block;
-  margin: 0 5px 0 5px;
+  margin: 10px 15px 0 5px;
 }
 
+.info-nav ul.menu-right li a{
+  background-color: var(--green-df);
+  color: var(--white-df);
+  width: 180px;
+  border-radius: 20px;
+}
 
+.info-nav .menu-center input{
+  border-radius: 20px;
+  width: 400px;
+}
+
+.info-nav .menu-center input .form-control:focus {
+  outline: 0 !important;
+  border-color: initial;
+  box-shadow: none;
+  border-color: none !important;
+}
+
+.info-nav .menu-center .input-group-append {
+  background-color: var(--white-df);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px
+}
+
+.info-nav .menu-center .input-group-append .input-group-text{
+  border: transparent !important;
+  color: var(--purple-df);
+}
 
 a.icon-shopping, a.icon-search{
   color: #262626;
@@ -79,7 +121,7 @@ a.icon-shopping a img, .menu-right a img{
 }
 
 .form-control:focus {
-  border-color: #010101!important;
+  /* border-color: #010101!important; */
   box-shadow: none;
 }
 
@@ -180,7 +222,7 @@ a.btn-more:after {
 }
 
 #site-header .toggle-menu .icon-bar {
-  background-color: #262626;
+  background-color: var(--white-df);
     display: block;
     width: 30px;
     height: 4px;
@@ -353,28 +395,32 @@ a.btn-more:after {
 /* star barra top */
 
 .barra-top{
-  background-color: #010101;
+  background-color: var(--white-df);
   padding: .9% 0;
 }
 
-.barra-top h3{
+.barra-top h5{
   text-transform: uppercase;
-  font-size: 35px;
-  color: #f0f0f0;
-  font-family: "Bebas-Regular";
-  letter-spacing: 1.5px;
+  /* font-size: 35px; */
+  color: #48448F;
+  font-weight: normal;
+  /* font-family: "Bebas-Regular"; */
+  /* letter-spacing: 1.5px; */
   margin-bottom: 0!important;
 }
 
-.barra-top h3 span{
+.barra-top h5 a{
+  background-color: var(--green-df);
+  color: var(--white-df);
   text-transform: none!important;
   font-size: 15px;
   font-family: "Avenir-Roman";
   letter-spacing: 1px;
+  border-radius: 10px;
 }
 
-.barra-top span a{
-  color: #e41714;
+.barra-top h3 a span{
+  font-weight: bold;
 }
 
 @media only screen and (min-width:200px) and (max-width:359px){
@@ -681,18 +727,31 @@ a.btn-more:after {
 
 /* star site-footer */
 .site-footer{
-  background-color: #010101;
+  background-color: var(--white-df);
   padding: 3% 0 0 0;
+}
+
+.site-footer a img {
+  height: 80px;
 }
 
 .content-f1{
   margin-bottom: 3%;
 }
 
-.site-footer .content-social-networks h3, .site-footer .content-pay h3{
-  font-size: 30px;
-  font-family: "Bebas-regular";
-  color: #f0f0f0;
+.site-footer .socials-medias a {
+  color: var(--green-df);
+}
+
+.site-footer .socials-medias a:hover {
+  color: var(--purple-df);
+  text-decoration: none;
+}
+
+.site-footer .content-comunidad h6, .site-footer .content-cryptos h6, .site-footer .content-cursos-live h6{
+  /* font-size: 30px; */
+  /* font-family: "Bebas-regular"; */
+  color: var(--green-df);
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -703,6 +762,15 @@ a.btn-more:after {
 
 .site-footer ul{
   list-style: none;
+}
+
+.site-footer ul li a{
+  color: var(--gray-dark-df);
+}
+
+.site-footer ul li a:hover{
+  color: var(--green-df);
+  text-decoration: none;
 }
 
 .site-footer .content-social-networks ul li{
@@ -725,8 +793,8 @@ a.btn-more:after {
 
 .content-footer-logo p{
   font-size: 12px;
-  font-family: "Avenir-Roman";
-  color: #f0f0f0;
+  /* font-family: "Avenir-Roman"; */
+  color: var(--gray-dark-df);
   line-height: 1.5;
   letter-spacing: 1px;
 }

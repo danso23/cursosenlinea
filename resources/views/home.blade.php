@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+{{-- @section('content')
     <!--start content-->
     <section class="hero">
         <div class="container">
@@ -60,4 +60,4 @@
             </div>
         </div>
     </section>
-@endsection
+@endsection --}}

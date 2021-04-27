@@ -44,11 +44,6 @@ body.menu-opened {
 
 .info-nav{
   background-color: transparent;
-  background-image: url('../img/Imagenes/DF-banner.jpg');
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .info-nav ul.menu-right, .info-nav ul.menu-center{
@@ -474,8 +469,16 @@ a.btn-more:after {
 
 /* star hero */
 .hero{
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   padding: 0 0 5% 0;
+}
+
+.hero .content-banner{
+  background-image: url('../img/Imagenes/DF-banner.jpg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero .content-category{
@@ -1424,3 +1427,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 input[type=number] { -moz-appearance:textfield; }
+
+.btn-green-df{
+  background-color: var(--green-df);
+  color: var(--white-df);
+  width: 180px;
+  border-radius: 20px;
+}

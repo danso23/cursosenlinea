@@ -161,5 +161,22 @@
                 </div>
             </div>
         </div>
+        <div class="content-comments-members container-home">
+            <div class="h-100">
+                <div class="row">
+                    <div class="col-7 comment-title">
+                        <div class="row">
+                            <div class="col-5">
+                                <h2>¡NUESTROS MIEMBROS <span>O</span>PINAN!</h2>
+                            </div>
+                            <div class="col-7">
+                                <img src="{{ asset('img/Imagenes/DF-cliente1.jpg') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection

@@ -484,6 +484,11 @@ a.btn-more:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--white-df);
+}
+
+.hero .content-banner h1{
+  font-weight: bold;
 }
 
 .hero .content-why-chooose{
@@ -538,6 +543,92 @@ font-weight: bold;
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: var(--gray-light-df);
+}
+
+.hero .content-membership .card-membership{
+  border-radius: 20px;
+}
+
+.hero .content-membership .card-top{
+  margin-top: 3rem !important;
+}
+
+.hero .content-membership .header-green{
+  background-color: var(--green-df);
+  color: var(--white-df);
+}
+
+.hero .content-membership .type-description-membership h6{
+  font-weight: lighter;
+  margin-bottom: 0 !important;
+}
+
+.hero .content-membership .price-description-membership h3{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+}
+
+.hero .content-membership .price-description-membership p{
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 0 !important;
+}
+
+.hero .content-membership .price-description-membership .price-membership{
+  
+}
+
+.hero .content-membership .list-contain-membership{
+  
+}
+
+.hero .content-membership .list-contain-membership .btn{
+  background-color: var(--green-df);
+  color: var(--white-df);
+  width: 180px;
+  border-radius: 20px;
+}
+
+.hero .content-membership .list-contain-membership ul{
+  list-style-type: none;
+}
+
+.hero .content-membership .list-contain-membership ul li{
+  font-size: 14px;
+}
+
+.hero .content-membership .list-contain-membership ul li::before {
+  content:'𐩒 ';
+  color: var(--green-df);
+  font-size: 15px;
+}
+
+.hero .content-membership .header-purple{
+  background-color: var(--purple-df);
+  color: var(--white-df);
+}
+
+.hero .content-membership .header-purple .price-description-membership{
+  background-color: var(--purple-df);
+  color: var(--white-df);
+}
+
+.hero .content-membership .header-purple .price-description-membership h6{
+  font-weight: lighter;
+  margin-bottom: 0 !important;
+}
+
+.hero .content-membership .header-purple .price-description-membership h3{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+}
+
+.hero .content-membership .header-purple .price-description-membership p{
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 0 !important;
 }
 
 .hero .content-category{

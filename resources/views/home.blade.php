@@ -6,8 +6,8 @@
         <div class="content-banner">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
-                  <div class="col-5 text-left">
-                    <h1 class="font-weight-light">TODO LO QUE NECESITAS PARA SER UN TRADER EN UN SOLO LUGAR</h1>
+                  <div class="col-6 text-left">
+                    <h1>TODO LO QUE NECESITAS PARA SER UN TRADER EN UN SOLO LUGAR</h1>
                     <p class="lead">Conoce nuestras membresias y unete a nuestra plataforma.</p>
                     <button class="btn btn-green-df">Registrate</button>
                   </div>
@@ -56,42 +56,105 @@
             <div class="container-home h-100">
                 <div class="row">
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
+                        <div class="card card-membership card-top" style="width: 18rem;">
+                            <div class="card-header header-green">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-4 type-description-membership">
                                         <h6>TRADER CFDS</h6>
                                     </div>
-                                    <div class="col-6 text-right">
-                                        <h3><span>$</span>349</h3>
+                                    <div class="col-8 text-center price-description-membership">
+                                        <h3 class="price-membership"><span>$</span>349</h3>
                                         <p>CDFS, CFDS, CFDS y CFDS</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="card-body list-contain-membership justify-content-center">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center list-contain">
+                                        <ul class="list-inline">
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <a href="#" class="btn">Conoce más</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header"></div>
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card card-membership" style="width: 18rem;">
+                            <div class="card-header header-purple">
+                                <div class="row">
+                                    <div class="col-12 text-center price-description-membership">
+                                        <h6>INVERSIONISTA MAESTRO</h6>
+                                        <h3 class="price-membership"><span>$</span>499</h3>
+                                        <p>CDFS, CFDS, CFDS y CFDS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body list-contain-membership justify-content-center">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center list-contain">
+                                        <ul class="list-inline">
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <a href="#" class="btn">Conoce más</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header"></div>
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card card-membership card-top" style="width: 18rem;">
+                            <div class="card-header header-green">
+                                <div class="row">
+                                    <div class="col-4 type-description-membership">
+                                        <h6>TRADER CFDS</h6>
+                                    </div>
+                                    <div class="col-8 text-center price-description-membership">
+                                        <h3 class="price-membership"><span>$</span>349</h3>
+                                        <p>CDFS, CFDS, CFDS y CFDS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body list-contain-membership justify-content-center">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center list-contain">
+                                        <ul class="list-inline">
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                            <li>Lorem ipsum dolor, sit amet.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <a href="#" class="btn">Conoce más</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

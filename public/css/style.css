@@ -473,12 +473,71 @@ a.btn-more:after {
   padding: 0 0 5% 0;
 }
 
+.hero .container-home{
+  margin-right: 13em;
+  margin-left: 13em;
+}
+
 .hero .content-banner{
   background-image: url('../img/Imagenes/DF-banner.jpg');
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero .content-why-chooose{
+  margin-top: 3em;
+}
+
+.hero .content-why-chooose h2{
+  color: var(--green-df);
+  font-weight: bold;
+  width: 205px;
+}
+
+.hero .content-why-chooose h2 span{
+  color: var(--purple-df);
+}
+
+.hero .content-why-chooose p{
+  font-size: .35cm;
+}
+
+.hero .content-why-chooose img.img-why-choose{
+  height: 80px;
+  width: auto;
+  margin-right: 50px;
+}
+
+.hero .content-what-is{
+  margin-top: 5em;
+}
+
+.hero .content-what-is img{
+  width: 380px;
+}
+
+.hero .content-what-is .content-text-what-is{
+  padding-top: 6em;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+.hero .content-what-is .content-text-what-is h2{
+color: var(--purple-df);
+font-weight: bold;
+}
+
+.hero .content-what-is .content-text-what-is h2 span{
+  color: var(--green-df);
+}
+
+.hero .content-membership{
+  margin-top: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: var(--gray-light-df);
 }
 
 .hero .content-category{

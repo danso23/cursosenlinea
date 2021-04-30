@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card card-membership" style="width: 18rem;">
+                        <div class="card card-membership card-principal" style="width: 18rem;">
                             <div class="card-header header-purple">
                                 <div class="row">
                                     <div class="col-12 text-center price-description-membership">
@@ -174,7 +174,57 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5"></div>
+                    <div class="col-1"></div>
+                    <div class="col-4 comments-members">
+                        <div class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h6>DANIEL PEÑA</h6>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed quibusdam saepe exercitationem expedita ratione, nemo deserunt omnis aut numquam quae eum, inventore molestias fugit quasi placeat a tempora? Distinctio!</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h6>DANIEL PEÑA</h6>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed quibusdam saepe exercitationem expedita ratione, nemo deserunt omnis aut numquam quae eum, inventore molestias fugit quasi placeat a tempora? Distinctio!</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h6>DANIEL PEÑA</h6>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed quibusdam saepe exercitationem expedita ratione, nemo deserunt omnis aut numquam quae eum, inventore molestias fugit quasi placeat a tempora? Distinctio!</p>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

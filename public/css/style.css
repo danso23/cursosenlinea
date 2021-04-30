@@ -545,8 +545,8 @@ font-weight: bold;
   background-color: var(--gray-light-df);
 }
 
-.hero .content-membership .card-membership{
-  border-radius: 20px;
+.hero .content-membership .card-principal{
+  border-bottom-left-radius: 80px;
 }
 
 .hero .content-membership .card-top{
@@ -581,6 +581,10 @@ font-weight: bold;
 
 .hero .content-membership .list-contain-membership{
   
+}
+
+.hero .content-membership .card-body-principal{
+  border-bottom-left-radius: 80px !important;
 }
 
 .hero .content-membership .list-contain-membership .btn{
@@ -636,6 +640,8 @@ font-weight: bold;
 }
 
 .hero .content-comments-members .comment-title{
+  height: 190px;
+  
   background-color: var(--purple-df);
   color: var(--white-df);
   padding-top: 2.5em;
@@ -661,7 +667,12 @@ font-weight: bold;
 .hero .content-comments-members .comment-title img{
   position: relative;
   height: 155px;
-  right: -215px;
+  right: -184px;
+  top: -25px;
+}
+
+.hero .content-comments-members .comments-members{
+  
 }
 
 .hero .content-category{

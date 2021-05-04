@@ -970,7 +970,60 @@ font-weight: bold;
 }
 
 .content-register .content-register-right{
+  margin-top: 7em;;
+}
 
+.content-register .content-register-right h2{
+  color: var(--purple-df);
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 0 !important;
+}
+
+.content-register .content-register-right p{
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+.content-register .content-register-right .custom-input{
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  border: none;
+  color: #8b8b8b;
+  padding-left: 25px;
+  height: 45px;
+}
+
+.content-register .content-register-right .custom-input::placeholder{
+  font-size: 14px;
+}
+
+.content-register .content-register-right .btn-green-df{
+  margin-right: 20px;
+}
+
+.content-register .content-register-right .btn-purple-df{
+  margin-left: 20px;
+}
+
+.content-register .content-register-right .content-acept-terms{
+  margin-top: 3em;
+}
+
+.content-register .content-register-right .content-acept-terms .acept-terms{
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+.content-register .content-register-right .content-acept-terms .acept-terms span{
+  color: var(--green-df);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.content-register .content-register-right .socials-medias a {
+  color: var(--green-df);
+  font-size: 23px;
 }
 
 /* end register*/
@@ -1768,6 +1821,13 @@ input[type=number] { -moz-appearance:textfield; }
 
 .btn-green-df{
   background-color: var(--green-df);
+  color: var(--white-df);
+  width: 180px;
+  border-radius: 20px;
+}
+
+.btn-purple-df{
+  background-color: var(--purple-df);
   color: var(--white-df);
   width: 180px;
   border-radius: 20px;

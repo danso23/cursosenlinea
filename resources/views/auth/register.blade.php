@@ -84,20 +84,21 @@
         </div>
         <div class="col-6 content-register-right align-self-center text-center">
             <div class="col-9">
-                <h1>REGISTRATE</h1>
+                <h2>REGISTRATE</h2>
                 <p>Únete a nuestra plataforma.</p>
                 <form action="">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Correo electrónico o nombre de usuario">
+                        <input type="text" class="form-control custom-input" placeholder="Correo electrónico o nombre de usuario">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Contraseña">
+                        <input type="text" class="form-control custom-input" placeholder="Contraseña">
                     </div>
-                    <button class="btn-primary pull-left">Download</button>
-                    <button class="btn-danger pull-right">Mirror</button>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Acepto los <span>Terminos</span>, <span>Condiciones</span> y <span>Politicas de MOM</span></label>
+                    <button class="btn btn-green-df pull-left">Registrate</button>
+                    <button class="btn btn-purple-df pull-right">Inicia sesión</button>
+                    
+                    <div class="form-check content-acept-terms">
+                        <input type="checkbox" class="form-check-input" id="acept-terms">
+                        <label class="form-check-label acept-terms" for="acept-terms">Acepto los <span>Terminos</span>, <span>Condiciones</span> y <span>Politicas de MOM</span></label>
                     </div>
                 </form>
                 <div class="row py-4 d-flex align-items-center socials-medias">

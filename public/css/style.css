@@ -922,6 +922,59 @@ font-weight: bold;
 }
 /* end hero */
 
+/* star register*/
+
+@media (min-width: 1200px){
+  .content-register {
+    max-width: 1220px;
+  }
+}
+
+.content-register{
+  
+}
+
+.content-register::before{
+  content: '';
+  background-image: url(../img/Imagenes/DF-recurso.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30%;
+  width: 20px;
+  display: inline-block;
+  z-index: 12;
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+.content-register::after{
+  content: '';
+  background-image: url(../img/Logotipo/DF-logotipopiedepagina.svg);
+  background-repeat: no-repeat;
+  height: 30%;
+  width: 50%;
+  display: inline-block;
+  z-index: 12;
+  position: absolute;
+  top: 200px;
+  left: -148px;
+}
+
+.content-register .content-register-left{
+
+}
+
+.content-register .content-register-left img{
+  width: 85%;
+  height: 550px;
+}
+
+.content-register .content-register-right{
+
+}
+
+/* end register*/
+
 /* star section-prodcuto */
 .section-productos{
   padding: 0 0 5% 0;

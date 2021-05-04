@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.template_register')
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -71,6 +71,53 @@
                     </form>
                 </div>
             </div>
+        </div>
+    </div>
+</div> --}}
+<div class="container content-register">
+    <div class="row h-100">
+        <div class="col-6 content-register-left">
+            <div class="col-1"></div>
+            <div class="col-11">
+                <img src="{{ asset('img/Imagenes/DF-register.jpg') }}" alt="">
+            </div>
+        </div>
+        <div class="col-6 content-register-right align-self-center text-center">
+            <div class="col-9">
+                <h1>REGISTRATE</h1>
+                <p>Únete a nuestra plataforma.</p>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Correo electrónico o nombre de usuario">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Contraseña">
+                    </div>
+                    <button class="btn-primary pull-left">Download</button>
+                    <button class="btn-danger pull-right">Mirror</button>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Acepto los <span>Terminos</span>, <span>Condiciones</span> y <span>Politicas de MOM</span></label>
+                    </div>
+                </form>
+                <div class="row py-4 d-flex align-items-center socials-medias">
+                    <div class="col-12 text-center">
+                      <a class="fb-ic">
+                        <i class="fab fa-whatsapp mr-4"> </i>
+                      </a>
+                      <a class="ins-ic">
+                        <i class="fab fa-instagram mr-4"> </i>
+                      </a>
+                      <a class="fb-ic">
+                        <i class="fab fa-facebook-f mr-4"> </i>
+                      </a>
+                      <a class="tw-ic">
+                        <i class="fab fa-twitter mr-4"> </i>
+                      </a>
+                    </div>           
+                </div>
+            </div>
+            <div class="col-3"></div>
         </div>
     </div>
 </div>

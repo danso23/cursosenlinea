@@ -77,9 +77,10 @@
 <div class="container content-register">
     <div class="row h-100">
         <div class="col-6 content-register-left">
-            <div class="col-1"></div>
-            <div class="col-11">
-                <img src="{{ asset('img/Imagenes/DF-register.jpg') }}" alt="">
+            <div class="row">
+                <div class="col-12">
+                    <img src="{{ asset('img/Imagenes/DF-registro001.jpg') }}" alt="">
+                </div>
             </div>
         </div>
         <div class="col-6 content-register-right align-self-center text-center">

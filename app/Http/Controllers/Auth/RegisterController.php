@@ -53,7 +53,17 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password' => ['required', 'string', 'min:8'], ##'confirmed'
+            'last_name' => ['string', 'max:255'],
+            'last_name2' => ['required', 'string', 'max:255'],
+            'date_of_birth' => ['required', 'string', 'max:255'],
+            'phone' => ['required', 'string', 'max:255'],
+            'country' => ['required', 'string', 'max:255'],
+            'state' => ['required', 'string', 'max:255'],
+            'zip_code' => ['required', 'string', 'max:255'],
+            /*'ine' => ['required', 'string', 'max:255'],
+            'proof_of_address' => ['required', 'string', 'max:255'],
+            'rfc' => ['required', 'string', 'max:255'],*/
         ]);
     }
 
@@ -65,10 +75,21 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        ##print_r($data);exit;
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'last_name' => $data['last_name'],
+            'last_name2' => $data['last_name2'],
+            'date_of_birth' => $data['date_of_birth'],
+            'phone' => $data['phone'],
+            'country' => $data['country'],
+            'state' => $data['state'],
+            'zip_code' => $data['zip_code'],
+            /*'ine' => $data['ine'],
+            'proof_of_address' => $data['proof_of_address'],
+            'rfc' => $data['rfc'],*/
         ]);
 
         $user->roles()->attach(Role::where('name', 'premium')->first());

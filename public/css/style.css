@@ -44,6 +44,8 @@ body.menu-opened {
 
 .info-nav{
   background-color: transparent;
+  position: relative;
+  z-index: 100;
 }
 
 .info-nav ul.menu-right, .info-nav ul.menu-center{
@@ -480,11 +482,13 @@ a.btn-more:after {
 
 .hero .content-banner{
   background-image: url('../img/Imagenes/DF-banner.jpg');
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--white-df);
+  position: relative;
+  top: -91px;
 }
 
 .hero .content-banner h1{
@@ -506,7 +510,7 @@ a.btn-more:after {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   position: absolute;
-  top: 40.6em;
+  top: 39.1em;
   left: 6.5em;
   z-index: -1;
 }
@@ -536,7 +540,7 @@ a.btn-more:after {
 }
 
 .hero .content-what-is img{
-  width: 380px;
+  height: 550px;
 }
 
 .hero .content-what-is .content-text-what-is{
@@ -610,7 +614,7 @@ font-weight: bold;
 }
 
 .hero .content-membership .list-contain-membership{
-  
+  /* padding: 2.25rem 1.25rem 2.25rem 1.25rem; */
 }
 
 .hero .content-membership .card-body-principal{
@@ -1244,6 +1248,10 @@ font-weight: bold;
   .copyright ul li.link-copy{
     font-size: 10px;
   }
+  .site-footer a img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width:360px) and (max-width:767px){
@@ -1265,6 +1273,10 @@ font-weight: bold;
   .copyright ul li.link-copy{
     font-size: 12px;
   }
+  .site-footer a img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width:768px) and (max-width:991px){
@@ -1279,6 +1291,10 @@ font-weight: bold;
   }
   .copyright ul li{
     font-size: 12px;
+  }
+  .site-footer a img {
+    height: auto;
+    width: 100%;
   }
 }
 /* end site-footer */

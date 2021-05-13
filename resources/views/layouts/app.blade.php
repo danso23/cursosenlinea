@@ -33,7 +33,7 @@
         </div>
         <div class="info-nav">
             <div class="container">
-                <div class="d-flex justify-content-between bd-highlight mb-3">
+                <div class="d-flex justify-content-between bd-highlight">
                     <div class="p-2 bd-highlight">
                         <a href="{{ asset('/')}}" class="logo">
                             <img src="{{ asset('/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
@@ -94,7 +94,7 @@
             </div>
         </div>
 
-        <main class="py-4" data-aos="fade-in">
+        <main data-aos="fade-in">
             @yield('content')
         </main>
         <!--footer-->

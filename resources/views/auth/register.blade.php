@@ -140,8 +140,8 @@
                         @csrf
 
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre">
+                            <div class="col-md-12">
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror custom-input" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre">
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -151,8 +151,8 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="last_name" type="text" class="form-control @error('last_name') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}" required autocomplete="last_name" autofocus placeholder="Apellido Paterno">
+                            <div class="col-md-12">
+                                <input id="last_name" type="text" class="form-control @error('last_name') is-invalid @enderror custom-input" name="last_name" value="{{ old('last_name') }}" required autocomplete="last_name" autofocus placeholder="Apellido Paterno">
                                 @error('last_name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -163,8 +163,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="last_name2" type="text" class="form-control @error('last_name2') is-invalid @enderror" name="last_name2" value="{{ old('last_name2') }}" required autocomplete="last_name2" autofocus placeholder="Apellido Materno">
+                            <div class="col-md-12">
+                                <input id="last_name2" type="text" class="form-control @error('last_name2') is-invalid @enderror custom-input" name="last_name2" value="{{ old('last_name2') }}" required autocomplete="last_name2" autofocus placeholder="Apellido Materno">
                                 @error('last_name2')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -175,8 +175,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="date_of_birth" type="text" class="form-control @error('date_of_birth') is-invalid @enderror" name="date_of_birth" value="{{ old('date_of_birth') }}" required autocomplete="date_of_birth" autofocus placeholder="Fecha de nacimiento">
+                            <div class="col-md-12">
+                                <input id="date_of_birth" type="text" class="form-control @error('date_of_birth') is-invalid @enderror custom-input" name="date_of_birth" value="{{ old('date_of_birth') }}" required autocomplete="date_of_birth" autofocus placeholder="Fecha de nacimiento">
                                 @error('date_of_birth')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -187,8 +187,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus placeholder="Celular">
+                            <div class="col-md-12">
+                                <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror custom-input" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus placeholder="Celular    ">
                                 @error('phone')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -199,8 +199,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="country" type="text" class="form-control @error('country') is-invalid @enderror" name="country" value="{{ old('country') }}" required autocomplete="country" autofocus placeholder="País">
+                            <div class="col-md-12">
+                                <input id="country" type="text" class="form-control @error('country') is-invalid @enderror custom-input" name="country" value="{{ old('country') }}" required autocomplete="country" autofocus placeholder="País">
                                 @error('country')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -211,8 +211,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="state" type="text" class="form-control @error('state') is-invalid @enderror" name="state" value="{{ old('state') }}" required autocomplete="state" autofocus placeholder="Estado">
+                            <div class="col-md-12">
+                                <input id="state" type="text" class="form-control @error('state') is-invalid @enderror custom-input" name="state" value="{{ old('state') }}" required autocomplete="state" autofocus placeholder="Estado">
                                 @error('state')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -223,8 +223,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="zip_code" type="text" class="form-control @error('zip_code') is-invalid @enderror" name="zip_code" value="{{ old('zip_code') }}" required autocomplete="zip_code" autofocus placeholder="Código Postal">
+                            <div class="col-md-12">
+                                <input id="zip_code" type="text" class="form-control @error('zip_code') is-invalid @enderror custom-input" name="zip_code" value="{{ old('zip_code') }}" required autocomplete="zip_code" autofocus placeholder="Código Postal">
                                 @error('zip_code')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -235,8 +235,8 @@
                         </div>
 
                         <!-- <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="ine" type="text" class="form-control @error('ine') is-invalid @enderror" name="ine" value="{{ old('ine') }}" required autocomplete="ine" autofocus placeholder="Fecha de nacimiento">
+                            <div class="col-md-12">
+                                <input id="ine" type="text" class="form-control @error('ine') is-invalid @enderror custom-input" name="ine" value="{{ old('ine') }}" required autocomplete="ine" autofocus placeholder="Fecha de nacimiento">
                                 @error('ine')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -247,8 +247,8 @@
                         </div> -->
 
                         <!-- <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="proof_of_address" type="text" class="form-control @error('proof_of_address') is-invalid @enderror" name="proof_of_address" value="{{ old('proof_of_address') }}" required autocomplete="proof_of_address" autofocus placeholder="Comprobante domiciliario">
+                            <div class="col-md-12">
+                                <input id="proof_of_address" type="text" class="form-control @error('proof_of_address') is-invalid @enderror custom-input" name="proof_of_address" value="{{ old('proof_of_address') }}" required autocomplete="proof_of_address" autofocus placeholder="Comprobante domiciliario">
                                 @error('proof_of_address')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -259,8 +259,8 @@
                         </div> -->
 
                         <!-- <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="rfc" type="text" class="form-control @error('rfc') is-invalid @enderror" name="rfc" value="{{ old('rfc') }}" required autocomplete="rfc" autofocus placeholder="RFC">
+                            <div class="col-md-12">
+                                <input id="rfc" type="text" class="form-control @error('rfc') is-invalid @enderror custom-input" name="rfc" value="{{ old('rfc') }}" required autocomplete="rfc" autofocus placeholder="RFC">
                                 @error('rfc')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -272,8 +272,8 @@
 
                         <div class="form-group row">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Correo">
+                            <div class="col-md-12">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror custom-input" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Correo">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -286,8 +286,8 @@
                         <div class="form-group row">
                             <!-- <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label> -->
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Contraseña">
+                            <div class="col-md-12">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror custom-input" name="password" required autocomplete="new-password" placeholder="Contraseña">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -307,8 +307,8 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                <button type="submit" class="btn btn-green-df pull-left">
+                                    Regístrate
                                 </button>
                             </div>
                         </div>

@@ -1834,3 +1834,8 @@ input[type=number] { -moz-appearance:textfield; }
   width: 180px;
   border-radius: 20px;
 }
+
+.fuente {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+}

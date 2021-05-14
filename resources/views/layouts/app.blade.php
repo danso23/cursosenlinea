@@ -31,13 +31,12 @@
         <div class="col-12 text-center barra-top m-0">
             <h5>CONOCE MÁS DE NUESTROS CURSOS <br class="d-block d-sm-block d-md-none d-lg-none"><a class="btn" href="#">Consulta las bases <span>aquí</span></a></h5>
         </div>
-        <div class="info-nav">
+        <!-- <div class="info-nav">
             <div class="container">
                 <div class="d-flex justify-content-between bd-highlight mb-3">
                     <div class="p-2 bd-highlight">
                         <a href="{{ asset('/')}}" class="logo">
                             <img src="{{ asset('/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
-                            <!-- <img src="img/logo.png" class="logo-white" alt=""> -->
                         </a>
                     </div>
                     <div class="p-2 bd-highlight">
@@ -67,14 +66,14 @@
                                 @if (Auth::guest())
                                     <a class="btn" href="{{ url('/login') }}"> Iniciar sesión </a>
                                 @else
-                                    <a class="btn" href="{{ url('/logout') }}"> logout </a>
+                                    <a class="btn" href="{{ url('/logout') }}"> Cerrar Sesión </a>
                                 @endif
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>    -->
         @include('layouts.template_navbar_responsive')
         <!-- END HEADER -->
 

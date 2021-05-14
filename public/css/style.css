@@ -287,6 +287,83 @@ a.btn-more:after {
     display: none;
   }
 }
+
+@media (max-width: 575px){
+  .info-nav ul.menu-right li, .info-nav ul.menu-center li {
+    display: block!important;
+    margin: 0;
+  }
+  .info-nav ul.menu-right, .info-nav ul.menu-center {
+    float: none!important;
+  }
+  .info-nav .menu-center input {
+    border-radius: 20px;
+    width: 80%!important;
+  }
+  .menu-login ul.menu-right li, .info-nav ul.menu-center li{
+    display: inline-block!important;
+  }
+  .info-nav ul.menu-right li a {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){
+  .info-nav ul.menu-right li, .info-nav ul.menu-center li {
+    display: block!important;
+    margin: 0;
+  }
+  .info-nav ul.menu-right, .info-nav ul.menu-center {
+    float: none!important;
+  }
+  .info-nav .menu-center input {
+    border-radius: 20px;
+    width: 80%!important;
+  }
+  .menu-login ul.menu-right li, .info-nav ul.menu-center li{
+    display: inline-block!important;
+  }
+  .info-nav ul.menu-right li a {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+  .info-nav ul.menu-right li, .info-nav ul.menu-center li {
+    display: block!important;
+    margin: 0;
+  }
+  .info-nav ul.menu-right, .info-nav ul.menu-center {
+    float: none!important;
+  }
+  .info-nav .menu-center input {
+    border-radius: 20px;
+    width: 80%!important;
+  }
+  .menu-login ul.menu-right li, .info-nav ul.menu-center li{
+    display: inline-block!important;
+  }
+  .info-nav ul.menu-right li a {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+  .info-nav ul.menu-right li, .info-nav ul.menu-center li {
+    display: block!important;
+    margin: 0;
+  }
+  .info-nav ul.menu-right, .info-nav ul.menu-center {
+    float: none!important;
+  }
+  .info-nav .menu-center input {
+    border-radius: 20px;
+    width: 80%!important;
+  }
+  .menu-login ul.menu-right li, .info-nav ul.menu-center li{
+    display: inline-block!important;
+  }
+}
 /* END HEADER */
 
 /* MENU */
@@ -503,7 +580,7 @@ a.btn-more:after {
   content: '';
   background-color: var(--gray-light-df);
   display: inline-block;
-  width: 1200px;
+  width: 85%;
   height: 300px;
   border-bottom-left-radius: 80px;
   border-top-left-radius: 5px;
@@ -680,7 +757,7 @@ font-weight: bold;
   color: var(--white-df);
   padding-top: 2.5em;
   /* padding-bottom: 3.5em; */
-  padding-left: 4.5em;
+  padding-left: 4em;
 
   border-top-left-radius: 5px;
   border-bottom-left-radius: 90px;
@@ -690,8 +767,20 @@ font-weight: bold;
 
 .hero .content-comments-members .comment-title h2{
   font-weight: bold;
-  width: 351px;
-  font-size: 35px;
+  font-size: 2vw!important;
+}
+
+@media (min-width: 1300px) {
+  .hero .content-comments-members .comment-title h2{
+    font-weight: bold;
+    font-size: 2.2vw!important;
+  }
+}
+@media (min-width: 1487px) {
+  .hero .content-comments-members .comment-title h2{
+    font-weight: bold;
+    font-size: 2.359vw!important;
+  }
 }
 
 .hero .content-comments-members .comment-title h2 span{
@@ -701,7 +790,7 @@ font-weight: bold;
 .hero .content-comments-members .comment-title img{
   position: relative;
   height: 155px;
-  right: -215px;
+  right: -50px;
   top: -25px;
 }
 
@@ -875,53 +964,305 @@ font-weight: bold;
   opacity: 0.5;
 }
 
-@media only screen and (min-width:200px) and (max-width:359px){
-  .mrl-q{
-    margin-left: 0;
-    margin-right: 0;
+@media (max-width: 575px){
+  .hero .content-banner h1 {
+    font-size: 20px;
   }
-  .caption .btn-add{
-    font-size: 10px;
+  .lead {
+    font-size: 18px;
   }
-  .caption{
-    left: 30%;
+  .hero .content-why-chooose h2 {
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+  }
+  .hero .content-why-chooose p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero .content-why-chooose img.img-why-choose {
+    height: 80px;
+    width: auto;
+    margin-right: 0px;
+    margin: auto;
+    display: block;
+  }
+
+  .hero .content-membership::after {
+    z-index: -9999;
+}
+  .hero .content-what-is img {
+    width: 100%;
+  }
+  .hero .content-what-is .content-text-what-is {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .hero .content-what-is .content-text-what-is h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .hero .content-what-is .content-text-what-is p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero .container-home {
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+  .hero .content-membership .card-top, .hero .content-membership .card-principal {
+    width: 100%!important;
+    z-index: 999;
+  }
+  .hero .content-membership .card-top ul li, .hero .content-membership .card-principal ul li{
+    font-size: 12px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 12px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 18px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 13px;
+    text-align: center;
+  }
+  .hero .content-membership .header-purple .price-description-membership h3 {
+    font-size: 20px;
+  }
+  .hero .content-membership .header-purple .price-description-membership h6 {
+    font-size: 15px;
+  }
+  .hero .content-membership .card-principal {
+    margin-top: 3em;
+  }
+  .hero .content-why-chooose::after {
+    content: none;
+  }
+  .hero .content-comments-members .comment-title {
+    height: 240px;
+    padding-left: 0;
+    border-bottom-left-radius: 5px;
+  }
+  .hero .content-comments-members .comment-title h2 {
+    width: 100%;
+    font-size: 25px!important;
+  }
+  .hero .content-comments-members .comment-title img {
+    height: 155px;
+    right: 0px;
+    margin-top: 15%;
+  }
+  .hero .content-comments-members .comments-members .carousel-item p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero .content-comments-members .comments-members .carousel-item h6 {
+    text-align: center;
+  }
+  .hero .content-comments-members .comments-members .carousel-item ul.star-rating {
+    text-align: center;
+  }
+  .hero .content-comments-members .comments-members .carousel-indicators {
+    left: 0!important;
   }
 }
 
-@media only screen and (min-width:360px) and (max-width:767px){
-  .mrl-q{
-    margin-left: 0;
-    margin-right: 0;
+@media only screen and (min-width:576px) and (max-width:767px){
+  .hero .content-banner h1 {
+    font-size: 26px;
   }
-  .caption .btn-add{
-    font-size: 10px;
+  .lead {
+    font-size: 18px;
   }
-  .caption{
-    left: 30%;
+  .hero .container-home {
+    margin-right: 5em;
+    margin-left: 5em;
+  }
+  .hero .content-why-chooose h2 {
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+  }
+  .hero .content-why-chooose p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero .content-why-chooose img.img-why-choose {
+    height: 80px;
+    width: auto;
+    margin-right: 0px;
+    margin: auto;
+    display: block;
+  }
+  .hero .content-what-is img {
+    width: 100%;
+  }
+  .hero .content-what-is .content-text-what-is {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .hero .content-what-is .content-text-what-is h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .hero .content-what-is .content-text-what-is p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero .content-membership .card-top, .hero .content-membership .card-principal {
+    width: 100%!important;
+    z-index: 999;
+  }
+  .hero .content-membership .card-top ul li, .hero .content-membership .card-principal ul li{
+    font-size: 12px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 12px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 18px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 13px;
+    text-align: center;
+  }
+  .hero .content-membership .header-purple .price-description-membership h3 {
+    font-size: 20px;
+  }
+  .hero .content-membership .header-purple .price-description-membership h6 {
+    font-size: 15px;
+  }
+  .hero .content-membership .card-principal {
+    margin-top: 3em;
+  }
+  .hero .content-comments-members .comment-title {
+    height: 240px;
+    padding-left: 0;
+    border-bottom-left-radius: 5px;
+  }
+  .hero .content-comments-members .comment-title h2 {
+    width: 100%;
+    font-size: 25px!important;
+  }
+  .hero .content-comments-members .comment-title img {
+    height: 155px;
+    right: 0px;
+    margin-top: 15%;
+  }
+  .hero .content-comments-members .comments-members .carousel-item p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero .content-comments-members .comments-members .carousel-item h6 {
+    text-align: center;
+  }
+  .hero .content-comments-members .comments-members .carousel-item ul.star-rating {
+    text-align: center;
+  }
+  .hero .content-comments-members .comments-members .carousel-indicators {
+    left: 0!important;
   }
 }
 
 @media only screen and (min-width:768px) and (max-width:991px){
-  .hero ul li a {
+  .hero .container-home {
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+  .hero .content-why-chooose h2 {
+    font-size: 18px;
+    width: 90%;
+  }
+  .hero .content-why-chooose p {
+    font-size: 14px;
+  }
+  .hero .content-what-is img {
+    width: 100%;
+    height: 380px;
+  }
+  .hero .content-what-is .content-text-what-is {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .hero .content-what-is .content-text-what-is h2 {
     font-size: 18px;
   }
-  .hero ul.category-hero {
-    padding: 19% 0;
+  .hero .content-what-is .content-text-what-is p {
+    font-size: 14px;
   }
-  .caption .btn-add{
+  .hero .content-membership .card-top, .hero .content-membership .card-principal {
+    width: 100%!important;
+    z-index: 999;
+  }
+  .hero .content-membership .card-top ul li, .hero .content-membership .card-principal ul li{
     font-size: 12px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 12px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 18px;
+  }
+  .hero .content-membership .type-description-membership h6 {
+    font-size: 13px;
+    text-align: center;
+  }
+  .hero .content-membership .header-purple .price-description-membership h3 {
+    font-size: 20px;
+  }
+  .hero .content-membership .header-purple .price-description-membership h6 {
+    font-size: 15px;
+  }
+  .hero .content-comments-members .comment-title {
+    height: 240px;
+    padding-left: 0;
+  }
+  .hero .content-comments-members .comment-title h2 {
+    width: 100%;
+    font-size: 20px!important;
+  }
+  .hero .content-comments-members .comment-title img {
+    height: 155px;
+    right: 0px;
+    margin-top: 15%;
+  }
+  .hero .content-comments-members .comments-members .carousel-item p {
+    font-size: 14px;
   }
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px){
-  .hero ul li a {
-    font-size: 25px;
+  .hero .content-what-is img {
+    width: 100%;
+    height: 420px;
   }
-  .hero ul.category-hero {
-    padding: 19% 0;
+  .hero .content-what-is .content-text-what-is {
+    padding-top: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
-  .caption .btn-add{
-    font-size: 18px;
+  .hero .content-membership .card-top, .hero .content-membership .card-principal  {
+    width: 100%!important;
+    z-index: 999;
+  }
+  .hero .container-home {
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+  .hero .content-comments-members .comment-title {
+    padding-left: 2%;
+  }
+  .hero .content-comments-members .comment-title h2 {
+    width: 100%;
+    font-size: 3vw!important;
+  }
+  .hero .content-comments-members .comment-title img {
+    height: 155px;
+    right: 0px;
   }
 }
 /* end hero */

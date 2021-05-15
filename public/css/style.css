@@ -308,11 +308,17 @@ a.btn-more:after {
     color: var(--white-df);
     border-radius: 20px;
   }
+  #navigation .inner-navigation {
+    padding: 50% 5%!important;
+  }
 }
 
 @media (max-width: 400px){
   .barra-top ul.menu-right li a {
     width: 50%;
+  }
+  #navigation .inner-navigation {
+    padding: 80% 5%!important;
   }
 }
 

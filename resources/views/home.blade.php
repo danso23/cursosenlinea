@@ -9,7 +9,7 @@
                   <div class="col-6 text-left">
                     <h1>TODO LO QUE NECESITAS PARA SER UN TRADER EN UN SOLO LUGAR</h1>
                     <p class="lead">Conoce nuestras membresias y unete a nuestra plataforma.</p>
-                    <button class="btn btn-green-df">Registrate</button>
+                    <a class="btn btn-green-df" href="{{ route('register') }}" >Registrate</a>
                   </div>
                 </div>
             </div>

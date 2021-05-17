@@ -88,7 +88,7 @@
         <div class="col-6 content-register-left">
             <div class="row">
                 <div class="col-12">
-                    <img src="{{ asset('img/Imagenes/DF-registro001.jpg') }}" alt="">
+                    <img src="{{ asset('public/img/Imagenes/DF-registro001.jpg') }}" alt="">
                 </div>
             </div>
         </div>

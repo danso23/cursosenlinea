@@ -23,15 +23,15 @@
                     </div>
                     <div class="col-xl-1 col-lg-1 d-lg-block d-md-none"></div>
                     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-9 col-col-2 content-why-choose-img">
-                        <img src="{{ asset('img/Iconos/ayuda.svg') }}" class="img-why-choose">
+                        <img src="{{ asset('public/img/Iconos/ayuda.svg') }}" class="img-why-choose">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto ipsum delectus corrupti eveniet nemo, nisi velit id.</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-9 col-col-2 content-why-choose-img">
-                        <img src="{{ asset('img/Iconos/equipo.svg') }}" class="img-why-choose">
+                        <img src="{{ asset('public/img/Iconos/equipo.svg') }}" class="img-why-choose">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto ipsum delectus corrupti eveniet nemo.</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-9 col-col-2 content-why-choose-img">
-                        <img src="{{ asset('img/Iconos/crecimiento.svg') }}" class="img-why-choose">
+                        <img src="{{ asset('public/img/Iconos/crecimiento.svg') }}" class="img-why-choose">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae.</p>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
             <div class="h-100">
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-10">
-                        <img src="{{ asset('img/Imagenes/DF-porque.jpg') }}" alt="">
+                        <img src="{{ asset('public/img/Imagenes/DF-porque.jpg') }}" alt="">
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-7 -col-sm-9 col-12 content-text-what-is">
                         <h2>¿QUÉ ES MINDS <span>O</span>VER MARKET?</h2>
@@ -170,7 +170,7 @@
                                 <h2>¡NUESTROS MIEMBROS <span>O</span>PINAN!</h2>
                             </div>
                             <div class="col-xl-5 col-lg-4 col-md-4 col-sm-5 col-5">
-                                <img src="{{ asset('img/Imagenes/DF-cliente1.jpg') }}" alt="">
+                                <img src="{{ asset('public/img/Imagenes/DF-cliente1.jpg') }}" alt="">
                             </div>
                         </div>
                     </div>

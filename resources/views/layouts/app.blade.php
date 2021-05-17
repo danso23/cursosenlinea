@@ -10,20 +10,20 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="{{ asset('public/css/bootstrap.css') }}" rel="stylesheet" />
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="{{ asset('/img/favicon.ico') }}" />
     <!-- Font Awesome icons (free version)-->
-    <script src="{{ asset('/js/all.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ asset('public/js/all.js') }}" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="{{ asset('/css/font-family.css') }}" rel="stylesheet" /><!-- Merriweather-->
-    <link href="{{ asset('/css/font-family2.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/css/font-family.css') }}" rel="stylesheet" /><!-- Merriweather-->
+    <link href="{{ asset('public/css/font-family2.css') }}" rel="stylesheet" type="text/css" />
     <!-- Third party plugin CSS-->
-    <link href="{{ asset('/css/magnific-popup.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('public/css/magnific-popup.min.css') }}" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{ asset('/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/public/css/style.css') }}" rel="stylesheet" />
     <!-- AOS ANIMATION -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/animation_aos/aos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/animation_aos/aos.css') }}">
 </head>
 <body>
     <div id="app">
@@ -46,7 +46,7 @@
                 <div class="d-flex row bd-highlight">
                     <div class="p-2 bd-highlight">
                         <a href="{{ asset('/')}}" class="logo">
-                            <img src="{{ asset('/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
+                            <img src="{{ asset('public/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
                             <!-- <img src="img/logo.png" class="logo-white" alt=""> -->
                         </a>
                     </div>
@@ -90,7 +90,7 @@
                 <div class="d-flex row bd-highlight justify-content-center">
                     <div class="col-lg-3 col-md-3 col-sm-2 col-3 p-2 bd-highlight">
                         <a href="{{ asset('/')}}" class="logo">
-                            <img src="{{ asset('/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
+                            <img src="{{ asset('public/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
                             <!-- <img src="img/logo.png" class="logo-white" alt=""> -->
                         </a>
                     </div>
@@ -156,7 +156,7 @@
             <div class="container content-f1">
                 <div class="row mrl-q">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-sm-center content-footer-logo">
-                        <a href=""><img src="{{ asset('/img/Logotipo/DF-logotipopiedepagina.svg') }}" alt="index.php"></a>
+                        <a href=""><img src="{{ asset('public/img/Logotipo/DF-logotipopiedepagina.svg') }}" alt="index.php"></a>
                         <div class="row justify-content-start">
                             <div class="col-md-11 col-lg-11">
                                 <p>Academia de trading fundada en el 2018 con un único propósito formar traders profesionales.</p>
@@ -237,19 +237,19 @@
         </footer>
         <!--end footer-->
         <!-- Bootstrap core JS-->
-        <script src="{{ asset('/js/jquery-3.5.1.js') }}"></script>
-        <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('public/js/jquery-3.5.1.js') }}"></script>
+        <script src="{{ asset('public/js/bootstrap.bundle.min.js') }}"></script>
         <!-- Third party plugin JS-->
-        <script src="{{ asset('/js/jquery.easing.min.js') }}"></script>
-        <script src="{{ asset('/js/jquery.magnific-popup.min.js')}}"></script>
-        <script type='text/javascript' src="{{ asset('/js/main.js') }}"></script>
-        <script src="{{ asset('/js/wow.min.js') }}"></script>
+        <script src="{{ asset('public/js/jquery.easing.min.js') }}"></script>
+        <script src="{{ asset('public/js/jquery.magnific-popup.min.js')}}"></script>
+        <script type='text/javascript' src="{{ asset('public/js/main.js') }}"></script>
+        <script src="{{ asset('public/js/wow.min.js') }}"></script>
         <!-- Core theme JS-->
         <!-- <script src="{{ asset('/js/scripts.js') }}"></script> -->
         <!-- AOS ANIMATION -->
-        <script type="text/javascript" src="{{ asset('/animation_aos/aos.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/animation_aos/aos.js') }}"></script>
         <!-- INIT AOS -->
-        <script type="text/javascript" src="{{ asset('/js/animation.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/js/animation.js') }}"></script>
     </div>
     </section> 
 </body>

@@ -1,88 +1,6 @@
 @extends('layouts.template_register')
 
 @section('content')
-{{--<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="last_name" class="col-md-4 col-form-label text-md-right">{{ __('last_name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="last_name" type="text" class="form-control @error('last_name') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}" required autocomplete="last_name" autofocus>
-
-                                
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>--}} 
 <div class="container content-register">
     <div class="row h-100 justify-content-center">
         <div class="col-5 col-sm-5 col-md-6 col-lg-6 content-register-left">
@@ -96,53 +14,72 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
                 <h2>REGISTRATE</h2>
                 <p>Únete a nuestra plataforma.</p>
-                {{--<form method="POST" action="{{ route('register') }}">
+                <form method="POST" action="{{ route('register') }}">
                     @csrf
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Nombre(s)" name="name" id="name">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                            <input type="text" class="form-control custom-input" placeholder="Nombre(s)" name="name" id="name">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Apellido paterno" name="lastname" id="lastname">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                            <input type="text" class="form-control custom-input" placeholder="Apellido  paterno" name="last_name" id="lastname">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Apellido materno" name="lastname2" id="lastname2">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                            <input type="text" class="form-control custom-input" placeholder="Apellido materno" name="last_name2" id="lastname2">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control custom-input" placeholder="Correo electrónico o nombre de usuario" name="email" id="email">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                            <input type="email" class="form-control custom-input" placeholder="Correo electrónico o nombre de usuario" name="email" id="email">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Fecha de nacimiento" name="date_of_birth" id="date_of_birth">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10 col-10">
+                            <input type="text" class="form-control custom-input datepicker" data-date-format="mm/dd/yyyy" placeholder="Fecha de nacimiento" name="date_of_birth" id="date_of_birth">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10 col-10 d-none d-sm-none d-md-none d-lg-block">
+                            <input type="text" class="form-control custom-input" placeholder="Número celular" name="phone" id="phone">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Número celular" name="phone" id="phone">
+                    <!-- <div class="form-group">
+                    </div> -->
+                    <div class="form-group row justify-content-center">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10 col-10">
+                            <input type="text" class="form-control custom-input" placeholder="País" name="country" id="country">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10 col-10 d-none d-sm-none d-md-none d-lg-block">
+                            <input type="text" class="form-control custom-input" placeholder="Estado" name="state" id="state">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="País" name="country" id="country">
+                    <!-- <div class="form-group">
+                    </div> -->
+                    <div class="form-group row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                            <input type="text" class="form-control custom-input" placeholder="Código Postal" name="zip_code" id="zip_code">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Estado" name="state" id="state">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                            <input type="text" class="form-control custom-input" placeholder="Contraseña" name="password" id="password">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Código Postal" name="zip_code" id="zip_code">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control custom-input" placeholder="Contraseña" name="password" id="password">
-                    </div>
+                    <div class="form-check content-acept-terms">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
+                            <input type="checkbox" class="form-check-input" id="acept-terms">
+                            <label class="form-check-label acept-terms" for="acept-terms">Acepto los <span>Terminos</span>, <span>Condiciones</span> y <span>Politicas de MOM</span></label>
+                        </div>
+                    </div><br>
                     <button class="btn btn-green-df pull-left">Registrate</button>
                     <!-- <button class="btn btn-purple-df pull-right">Inicia sesión</button> -->
-                    
-                    <div class="form-check content-acept-terms">
-                        <input type="checkbox" class="form-check-input" id="acept-terms">
-                        <label class="form-check-label acept-terms" for="acept-terms">Acepto los <span>Terminos</span>, <span>Condiciones</span> y <span>Politicas de MOM</span></label>
-                    </div>
-                </form>--}}
-                <form method="POST" action="{{ route('register') }}">
+                </form>
+                {{--<form method="POST" action="{{ route('register') }}">
                         @csrf
-
                         <div class="form-group row input-r justify-content-center">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre">
-
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -161,7 +98,6 @@
                                 
                             </div>
                         </div>
-
                         <div class="form-group row input-r justify-content-center">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-10">
                                 <input id="last_name2" type="text" class="form-control @error('last_name2') is-invalid @enderror" name="last_name2" value="{{ old('last_name2') }}" required autocomplete="last_name2" autofocus placeholder="Apellido Materno">
@@ -328,11 +264,11 @@
                         <div class="form-group row justify-content-center">
                             <div class="col-8 col-sm-6 col-md-6">
                                 <button type="submit" class="btn btn-primary btn-register">
-                                    {{ __('Register') }}
+                                    Registro
                                 </button>
                             </div>
                         </div>
-                    </form>
+                </form>--}}
                 <div class="row py-4 d-flex align-items-center socials-medias">
                     <div class="col-12 text-center">
                       <a class="fb-ic">

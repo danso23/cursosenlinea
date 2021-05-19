@@ -1339,7 +1339,7 @@ font-weight: bold;
 
 .content-register::before{
   content: '';
-  background-image: url(../img/Imagenes/DF-registro003.png);
+  background-image: url(../public/img/Imagenes/DF-registro003.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 30%;
@@ -1352,7 +1352,7 @@ font-weight: bold;
 }
 .content-register::after{
   content: '';
-  background-image: url(../img/Imagenes/DF-registro002.png);
+  background-image: url(../public/img/Imagenes/DF-registro002.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 20%;

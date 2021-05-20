@@ -50,7 +50,7 @@
                             <!-- <img src="img/logo.png" class="logo-white" alt=""> -->
                         </a>
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight col-7">
                         <ul class="menu-center">
                             <li>
                                 <form action="" class="form-inline">
@@ -66,13 +66,13 @@
                     </div>
                     <div class="d-highlight">
                         <ul class="menu-right">
-                            <li class="menu-m">
+                            <!-- <li class="menu-m">
                                 <button class="navbar-toggler toggler-example toggle-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="text-white">
                                         <i class="fas fa-bars fa-1x"></i>
                                     </span>
                                 </button>
-                            </li>
+                            </li> -->
                             <li>
                                 @if (Auth::guest())
                                     <a class="btn" href="{{ url('/login') }}"> Iniciar sesión </a>
@@ -110,13 +110,13 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-5 col-3 p-2 bd-highlight menu-login">
                         <ul class="menu-right">
-                            <li class="menu-m">
+                            <!-- <li class="menu-m">
                                 <button class="navbar-toggler toggler-example toggle-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="text-white">
                                         <i class="fas fa-bars fa-1x"></i>
                                     </span>
                                 </button>
-                            </li>
+                            </li> -->
                             <li class="d-none d-sm-block">
                                 @if (Auth::guest())
                                     <a class="btn" href="{{ url('/login') }}"> Iniciar sesión </a>

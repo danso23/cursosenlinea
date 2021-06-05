@@ -10,47 +10,36 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link href="{{ asset('public/css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" />
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="{{ asset('/img/favicon.ico') }}" />
     <!-- Font Awesome icons (free version)-->
-    <script src="{{ asset('public/js/all.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ asset('/js/all.js') }}" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="{{ asset('public/css/font-family.css') }}" rel="stylesheet" /><!-- Merriweather-->
-    <link href="{{ asset('public/css/font-family2.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('/css/font-family.css') }}" rel="stylesheet" /><!-- Merriweather-->
+    <link href="{{ asset('/css/font-family2.css') }}" rel="stylesheet" type="text/css" />
     <!-- Third party plugin CSS-->
-    <link href="{{ asset('public/css/magnific-popup.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/magnific-popup.min.css') }}" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{ asset('/public/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet" />
     <!-- AOS ANIMATION -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/animation_aos/aos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/animation_aos/aos.css') }}">
 </head>
 <body>
     <div id="app">
        <!-- HEADER -->
         <div class="col-12 text-center barra-top m-0">
-            <h5>CONOCE MÁS DE NUESTROS CURSOS <br class="d-block d-sm-block d-md-none d-lg-none"><a class="btn" href="#">Consulta las bases <span>aquí</span></a></h5>
-            <br class="d-block d-sm-none">
-            <ul class="menu-right d-block d-sm-none d-md-none d-lg-none d-xl-none">
-                <li>
-                    @if (Auth::guest())
-                        <a class="btn" href="{{ url('/login') }}"> Iniciar sesión </a>
-                    @else
-                        <a class="btn" href="{{ url('/logout') }}"> logout </a>
-                    @endif
-                </li>
-            </ul>
+            <h5>CONOCE MÁS DE NUESTROS CURSOS <br class="d-block d-sm-block d-md-none d-lg-none"><a class="btn" href="{{route('cart.checkout')}}">Consulta las bases <span>aquí</span></a></h5>
         </div>
-        <div class="info-nav d-xl-block d-lg-none d-md-none d-sm-none d-none">
+        <!-- <div class="info-nav">
             <div class="container">
-                <div class="d-flex row bd-highlight">
+                <div class="d-flex justify-content-between bd-highlight">
                     <div class="p-2 bd-highlight">
                         <a href="{{ asset('/')}}" class="logo">
-                            <img src="{{ asset('public/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
-                            <!-- <img src="img/logo.png" class="logo-white" alt=""> -->
+                            <img src="{{ asset('/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
                         </a>
                     </div>
-                    <div class="p-2 bd-highlight col-7">
+                    <div class="p-2 bd-highlight">
                         <ul class="menu-center">
                             <li>
                                 <form action="" class="form-inline">
@@ -64,71 +53,27 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="d-highlight">
+                    <div class="p-2 bd-highlight">
                         <ul class="menu-right">
-                            <!-- <li class="menu-m">
+                            <li class="menu-m">
                                 <button class="navbar-toggler toggler-example toggle-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="text-white">
                                         <i class="fas fa-bars fa-1x"></i>
                                     </span>
                                 </button>
-                            </li> -->
+                            </li>
                             <li>
                                 @if (Auth::guest())
                                     <a class="btn" href="{{ url('/login') }}"> Iniciar sesión </a>
                                 @else
-                                    <a class="btn" href="{{ url('/logout') }}"> logout </a>
+                                    <a class="btn" href="{{ url('/logout') }}"> Cerrar Sesión </a>
                                 @endif
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="info-nav d-block d-md-block d-lg-block d-xl-none">
-            <div class="container">
-                <div class="d-flex row bd-highlight justify-content-center">
-                    <div class="col-lg-3 col-md-3 col-sm-2 col-3 p-2 bd-highlight">
-                        <a href="{{ asset('/')}}" class="logo">
-                            <img src="{{ asset('public/img/Logotipo/DF-logotipoheader.svg') }}" class="logo-black" alt="">
-                            <!-- <img src="img/logo.png" class="logo-white" alt=""> -->
-                        </a>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-5 col-6 p-2 bd-highlight">
-                        <ul class="menu-center">
-                            <li>
-                                <form action="" class="">
-                                    <div class="input-group">
-                                        <span class="input-group-append">
-                                            <div class="input-group-text bg-transparent"><i class="fa fa-search"></i></div>
-                                        </span>
-                                        <input class="form-control py-2 border-right-0 border" type="search" id="example-search-input">
-                                    </div>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-5 col-3 p-2 bd-highlight menu-login">
-                        <ul class="menu-right">
-                            <!-- <li class="menu-m">
-                                <button class="navbar-toggler toggler-example toggle-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="text-white">
-                                        <i class="fas fa-bars fa-1x"></i>
-                                    </span>
-                                </button>
-                            </li> -->
-                            <li class="d-none d-sm-block">
-                                @if (Auth::guest())
-                                    <a class="btn" href="{{ url('/login') }}"> Iniciar sesión </a>
-                                @else
-                                    <a class="btn" href="{{ url('/logout') }}"> logout </a>
-                                @endif
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>    -->
         @include('layouts.template_navbar_responsive')
         <!-- END HEADER -->
 
@@ -153,17 +98,17 @@
         </main>
         <!--footer-->
         <footer class="site-footer">
-            <div class="container content-f1">
+            <div class="container p-0 content-f1">
                 <div class="row mrl-q">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-sm-center content-footer-logo">
-                        <a href=""><img src="{{ asset('public/img/Logotipo/DF-logotipopiedepagina.svg') }}" alt="index.php"></a>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 text.sm-center content-footer-logo">
+                        <a href=""><img src="{{ asset('/img/Logotipo/DF-logotipopiedepagina.svg') }}" alt="index.php"></a>
                         <div class="row justify-content-start">
                             <div class="col-md-11 col-lg-11">
                                 <p>Academia de trading fundada en el 2018 con un único propósito formar traders profesionales.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center text-sm-center text-md-left text-lg-left content-comunidad">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center text.sm-center text-md-left text-lg-left content-comunidad">
                     <h6>COMUNIDAD</h6>
                         <ul>
                             <li>
@@ -197,7 +142,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center text-sm-center text-md-left text-lg-left content-cursos-live">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 text-center text.sm-center text-md-left text-lg-left content-cursos-live">
                         <h6>CURSOS EN VIVO</h6>
                         <ul>
                             <li>
@@ -237,19 +182,19 @@
         </footer>
         <!--end footer-->
         <!-- Bootstrap core JS-->
-        <script src="{{ asset('public/js/jquery-3.5.1.js') }}"></script>
-        <script src="{{ asset('public/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('/js/jquery-3.5.1.js') }}"></script>
+        <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
         <!-- Third party plugin JS-->
-        <script src="{{ asset('public/js/jquery.easing.min.js') }}"></script>
-        <script src="{{ asset('public/js/jquery.magnific-popup.min.js')}}"></script>
-        <script type='text/javascript' src="{{ asset('public/js/main.js') }}"></script>
-        <script src="{{ asset('public/js/wow.min.js') }}"></script>
+        <script src="{{ asset('/js/jquery.easing.min.js') }}"></script>
+        <script src="{{ asset('/js/jquery.magnific-popup.min.js')}}"></script>
+        <script type='text/javascript' src="{{ asset('/js/main.js') }}"></script>
+        <script src="{{ asset('/js/wow.min.js') }}"></script>
         <!-- Core theme JS-->
         <!-- <script src="{{ asset('/js/scripts.js') }}"></script> -->
         <!-- AOS ANIMATION -->
-        <script type="text/javascript" src="{{ asset('public/animation_aos/aos.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/animation_aos/aos.js') }}"></script>
         <!-- INIT AOS -->
-        <script type="text/javascript" src="{{ asset('public/js/animation.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/animation.js') }}"></script>
     </div>
     </section> 
 </body>

@@ -21,6 +21,7 @@ class PaymentController extends Controller
     public function processPayment(Request $request){
         $total = \Cart::getTotal();
         // Validacion para el envio de los datos que son necesarios para proceder a la compra
+        dd($request->all());
         $this->validate($request, [
             'card_no' => 'required',
             'expiry_month' => 'required',
@@ -102,6 +103,7 @@ class PaymentController extends Controller
         }
         catch (\Exception $e) {
             DB::rollBack();
+            dd("Error");
             return redirect('payment')->with('error', $e->getMessage());
         }
     }

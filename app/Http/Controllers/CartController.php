@@ -13,6 +13,7 @@ class CartController extends Controller{
 
     public function add (Request $request){
         $producto = ProductoModel::find($request->id_producto);
+        //dd($producto);
         $utils = new Utils();
         \Cart::add(array(
             'id' => $producto->id_producto,
